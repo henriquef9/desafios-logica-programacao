@@ -1,0 +1,35 @@
+
+    # Nome do Desafio:
+    Classificar cores
+
+    # Plataforma:
+    LeetCode
+
+    # Dificuldade:
+    Média
+
+    # Link:
+    https://leetcode.com/problems/sliding-window-maximum/
+
+    # Descrição:
+    Dada uma matriz numscom nobjetos coloridos de vermelho, branco ou azul, classifique-os no local de modo que os objetos da mesma cor fiquem adjacentes, com as cores na ordem vermelho, branco e azul.
+
+    Usaremos os inteiros 0, 1, e 2para representar as cores vermelha, branca e azul, respectivamente.
+
+    Você deve resolver este problema sem usar a função de classificação da biblioteca.
+
+    # Exemplos:
+    Exemplo 1:
+
+    Entrada: nums = [2,0,2,1,1,0]
+    Saída: [0,0,1,1,2,2]
+    Exemplo 2:
+
+    Entrada: nums = [2,0,1]
+    Saída: [0,1,2]
+        
+    #Restrições:
+
+    n == nums.length
+    1 <= n <= 300
+    nums[i]é 0, 1, ou 2.
