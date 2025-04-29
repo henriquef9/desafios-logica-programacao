@@ -50,6 +50,8 @@ var sortColors = function(nums) {
 
     return nums
 };
+
+// teste
         
 var nums = [0,1];
 
