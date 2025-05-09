@@ -1,0 +1,34 @@
+
+    # Nome do Desafio:
+    Substring palíndrômica mais longa
+    
+    # Plataforma:
+    LeetCode
+
+    # Dificuldade:
+    Médio  
+
+    # Link:
+    https://leetcode.com/problems/longest-palindromic-substring/description/
+
+    # Descrição:
+    Dada uma string s, retorne a mais longa palíndromo substringem s.
+
+    # Exemplos:
+    Exemplo 1:
+
+    Entrada: s = "babad"
+    Saída: "bab"
+    Explicação: "aba" também é uma resposta válida.
+    Exemplo 2:
+
+    Entrada: s = "cbbd"
+    Saída: "bb"
+    
+    
+    
+    #Restrições:
+
+    1 <= s.length <= 1000
+    s consistem apenas de dígitos e letras inglesas.
+    
