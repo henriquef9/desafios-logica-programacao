@@ -5,16 +5,19 @@ def longestPalindrome(s):
     start = 0
     end = 0
 
+    n= len(s)
+
     while center < len(s):
 
-        left = center
-        right = center
+        if (2 * min(center, n - center - 1) + 1) + 1 < start - end + 1:
+            break
 
-        if center + 1 < len(s) and s[center] == s[center+1]:
+        left = center
+        right = center + 1
+
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            left-=1
             right+=1
-            while left >= 0 and right < len(s) and s[left] == s[right]:
-                left-=1
-                right+=1
 
         if (end - start + 1) < (right - 1 - left + 1 - 1):
             start = left + 1
@@ -25,12 +28,10 @@ def longestPalindrome(s):
 
         left = center
         right = center
-        if center - 1 >= 0 and center + 1 < len(s) and s[center - 1] == s[center + 1]:
-            right+=1
+
+        while left >= 0 and right < len(s) and s[left] == s[right]:
             left-=1
-            while left >= 0 and right < len(s) and s[left] == s[right]:
-                left-=1
-                right+=1
+            right+=1
 
         if (end - start + 1) < (right - 1 - left + 1 - 1):
             start = left + 1
