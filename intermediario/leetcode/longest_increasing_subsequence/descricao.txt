@@ -1,0 +1,35 @@
+
+    # Nome do Desafio:
+    Longest Increasing Subsequence    
+    
+    # Plataforma:
+    LeetCode
+
+    # Dificuldade:
+    Médio  
+
+    # Link:
+    https://leetcode.com/problems/longest-increasing-subsequence/description/
+
+    # Descrição:
+    Dado um array inteiro nums, retorne o comprimento do maior estritamente crescentesubsequência.
+
+    Exemplo 1:
+
+    Entrada: nums = [10,9,2,5,3,7,101,18]
+    Saída: 4
+    Explicação: A maior subsequência crescente é [2,3,7,101], portanto o comprimento é 4.
+    Exemplo 2:
+
+    Entrada: nums = [0,1,0,3,2,3]
+    Saída: 4
+    Exemplo 3:
+
+    Entrada: nums = [7,7,7,7,7,7,7]
+    Saída: 1
+    
+    #Restrições:
+
+    1 <= nums.length <= 2500
+    -10^4 <= nums[i] <= 10^4
+    
