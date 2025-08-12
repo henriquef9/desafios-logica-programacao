@@ -25,7 +25,7 @@ def climbStairs(n):
 
 print(climbStairs(1))
 print(climbStairs(2))
-print(climbStairs(3))
+print(climbStairs(3))   
 print(climbStairs(4))
 print(climbStairs(5))
 print(climbStairs(6))

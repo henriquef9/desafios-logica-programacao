@@ -3,39 +3,36 @@
 
 def minDistance(word1, word2):
 
-    memo = {}
+    memo = dict()
 
-    def dp(index1, index2, word):
+    def bt(i,j):
 
-        if word == word2:
-            return 1
+        if (i, j) in memo:
+            return memo[(i, j)]
+
+        if i == len(word1):
+            return len(word2) - j
+        if j == len(word2):
+            return len(word1) - i
         
-        if index1 >= len(word1) and index2 >= len(word2):
-            return 0
-
-        if index1 >= len(word1):
-            index1 = len(word1)-1
-        if index2 >= len(word2):
-            index2 = len(word2)-1
-        
-
-        if index1 == index2:
-            return dp(index1+1, index2+1, word)
+        if word1[i] == word2[j]:
+            memo[(i, j)] = bt(i + 1, j + 1)
         else:
+            insert = 1 + bt(i, j + 1)
+            delete = 1 + bt(i + 1, j)
+            replace = 1 + bt(i + 1, j + 1)
+            memo[(i, j)] = min(insert, delete, replace)
 
-            dp(index1, index2+1 , word[:index1] + word2[index2] + word[index1:])
-            dp(index1 +1, index2, word[:index1] + word[index1:])
-            dp(index1+1, index2+1,  word[:index1] + word2[index2] + word[index1+1:])
-    
-    return dp(0,0, word1)
+        return memo[(i, j)]
 
+    return bt(0, 0)
 
             
 
 
 
-word1 = "horse"
-word2 = "ros"
+word1 = "intention"
+word2 = "execution"
 
 print(minDistance(word1, word2))
 
