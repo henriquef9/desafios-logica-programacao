@@ -1,7 +1,7 @@
 
 # 💡 Desafios de Lógica de Programação
 
-Este repositório reúne desafios de lógica resolvidos em **JavaScript**, **Python** e **Java**, organizados por **nível de dificuldade** e **plataforma** (LeetCode, Beecrowd, desafios próprios, etc).
+Este repositório reúne desafios de lógica resolvidos em **JavaScript**, **Python**, **Java**, organizados por **nível de dificuldade** e **plataforma** (LeetCode, Beecrowd, desafios próprios, etc).
 
 ---
 
